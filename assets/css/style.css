@@ -1,8 +1,16 @@
 body{
     background-color: blue;
 }
-
-
+a{
+  color: white;
+}
+footer{ 
+  background-color: black;
+  color: aquamarine;
+}
+.aboutUs {
+  text-align: center;
+}
 .gallery{
     display: flex;
     flex-direction: row;
@@ -16,22 +24,6 @@ body{
 img{
     border-radius: 10%;
   }
-a{
-    color: white;
-}
-footer{ 
-    background-color: black;
-    color: aquamarine;
-}
-.aboutUs {
-    text-align: center;
-}
-
-/*@media only screen and (max-width: 600px) {
-    body {
-      max-width: 600px;
-    }
-  }*/
   @media (max-width: 767px) {
     /* Estilos para celular */
     body {

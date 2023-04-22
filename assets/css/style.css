@@ -1,5 +1,6 @@
 body{
     background-color: blue;
+    font-size: 5vw;
 }
 a{
   color: white;
@@ -23,34 +24,26 @@ footer{
 
 img{
     border-radius: 10%;
+    max-width:100%;
+    height:auto;
   }
-  @media (max-width: 767px) {
-    /* Estilos para celular */
-    body {
-      font-size: 16px;
-    }
-    .container {
-      width: 100%;
-      padding: 10px;
-    }
+  /* Dispositivos pequeños (teléfonos, 600px y menos) */
+@media only screen and (max-width: 600px) {
+  body{
+    background-color: blue;
+    font-size: 4vw;
   }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    /* Estilos para tablet */
-    body {
-      font-size: 18px;
-    }
-    .container {
-      width: 80%;
-      padding: 20px;
-    }
+}
+  /* Dispositivos medios (tablets horizontales, 768px y más) */
+@media only screen and (min-width: 768px){
+  body{
+    background-color: blue;
+    font-size: 4vw;
   }
-  @media (min-width: 1024px) {
-    /* Estilos para escritorio */
-    body {
-      font-size: 20px;
-    }
-    .container {
-      width: 60%;
-      padding: 30px;
-    }
-  }
+}
+/* Dispositivos largos (laptops/escritorio, 992px y más) */
+@media only screen and (min-width: 992px) {
+    body{
+    background-color: blue;
+    font-size: 2vw;
+}}

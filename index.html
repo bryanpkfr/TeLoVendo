@@ -11,45 +11,91 @@
 </head>
 
 <body>
-    <header>
-        <h1>Te lo Vendo</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Estadísticas</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-                
-        </ul> 
-    </nav> 
-    <section class="aboutUs">
-        <div>
-            <h2>Quienes somos</h2>
-            <p>Somos TeLoVendo, una empresa que vende artículos deportivos, especializados en zapatillas las cuales exportamos sin intermediarios,
-                obteniendo reducidos costos tanto para nosotros como para nuestros clientes. Estamos ubicados en Temuco, Av. Alemania 911
-            </p>
-        </div>
-    </section>
-    <h2>Galería de imágenes</h2>
-    <section class="gallery">
-        <div>
-            <div class="tarjeta">
-                <img src="/assets/img/babypredator-adidas.jpg" alt="nike superfly">
-            </div>
-            <div class="tarjeta">
-                <img src="/assets/img/adidias.jpg" alt="zapatillas adidas">
-            </div>
-            <div class="tarjeta">
-                <img src="/assets/img/futbol-adedias.jpg" alt="zapatillas adidas">
-            </div>
-            <div class="tarjeta">
-                <img src="/assets/img/phantomnike.jpg" alt="zapatillas phantom nike">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+        <div class="container-fluid col-lg-10">
+            <a class="navbar-brand dis" href="/index.html">TE LO VENDO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Estadísticas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
-    <footer>
-        <p>Desarrollado por Juan Maldonado | Bryan Neculfilo | Ivan Rodríguez | 2023 </p>
-        <p>Escríbenos a: <a href="mailto:telovendo@gmail.com">telovendo@gmail.com</a></p>
+    </nav>
+    <main class="container">
+        <section class="container my-2">
+            <article>
+                <h2 class="display-4">Quiénes somos</h2>
+                <p class="lead">Somos TeLoVendo, una empresa que vende artículos deportivos, especializados en zapatillas las cuales exportamos sin intermediarios,
+                    obteniendo reducidos costos tanto para nosotros como para nuestros clientes. Estamos ubicados en Temuco, Av. Alemania 911
+                </p>
+            </article>
+        </section>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/assets/img/futbol-adedias.jpg" class="d-block w-100" alt="img1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Zapatos de fútbol PRO - Adidas Predator</h5>
+                        <p>La zapatilla de fútbol Predator de Adidas combina tecnología de precisión con un ajuste cómodo y seguro, 
+                            lo que la convierte en la elección perfecta para los jugadores que buscan mejorar su control del balón en el campo.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/img/babypredator-adidas.jpg" class="d-block w-100" alt="img2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Zapatos de fútbol PRO - Adidas Predator</h5>
+                        <p>La zapatilla de fútbol Predator de Adidas ha sido diseñada para brindar un excelente control del balón y una 
+                            gran comodidad en el campo, lo que la convierte en una opción ideal para los jugadores que buscan mejorar su rendimiento en el juego.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/img/phantomnike.jpg" class="d-block w-100" alt="img3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Zapatos de fútbol PRO - Nike Phantom</h5>
+                        <p>La zapatilla de fútbol Phantom de Nike combina una parte superior de ajuste perfecto con una suela diseñada para brindar una excelente 
+                            tracción en el campo, lo que la convierte en la elección perfecta para los jugadores que buscan mejorar su agilidad y velocidad en el juego.</p>
+                    </div>    
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/img/adidias.jpg" class="d-block w-100" alt="img4">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Zapatos de fútbol PRO - Adidas Predator</h5>
+                        <p>La zapatilla de fútbol Predator de Adidas ha sido diseñada para ofrecer un excelente rendimiento en el campo, gracias a su tecnología de 
+                            control de balón y su suela diseñada para brindar una gran tracción en cualquier superficie.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
+    <footer class="container">
+        <p class="lead" >Desarrollado por Juan Maldonado | Bryan Neculfilo | Ivan Rodríguez | 2023 </p>
+        <p class="lead">Escríbenos a: <a href="mailto:telovendo@gmail.com">telovendo@gmail.com</a></p>
     </footer>
     <!-- JS Bootstrap v5.0.2 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
